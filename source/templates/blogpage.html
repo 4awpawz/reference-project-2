@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link data-trio-link rel="stylesheet" href="/css/main.css">
     <title data-trio-callback="setBlogPageDocTitle">Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Roboto&display=swap" rel="stylesheet">
+    <link data-trio-link rel="stylesheet" href="/css/main.css">
 </head>
-<body>
-    <header data-trio-include="header.html" data-trio-callback="header"
-    class="header header--no-bottom-margin"></header>
-    <main class="blog">
+<body class="blog">
+    <div class="container blog__container">
+        <header data-trio-include="blogheader.html"></header>
+        <div data-trio-include="blogpagecategorieslist.html"></div>
+    </div>
+    <main>
         <section class="banner">
             <p class="banner__text">Banner</p>
         </section>

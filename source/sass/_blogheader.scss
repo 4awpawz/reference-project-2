@@ -1,0 +1,17 @@
+.blog-header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1;
+    letter-spacing: 1px;
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: $blog-serif-font;
+        font-size: 2.25rem;
+    }
+}

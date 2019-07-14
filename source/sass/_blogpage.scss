@@ -1,6 +1,8 @@
 .blog {
+    font-family: $blog-sans-serif-font;
+
     &__container {
-        width: $blog-container-width;
+        max-width: $blog-container-width;
     }
 
     &__articles {
