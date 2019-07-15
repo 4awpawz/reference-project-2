@@ -1,14 +1,27 @@
 .blog-categories-list {
-    padding: 1rem 0;
+    padding: .25rem 0;
     border-bottom: 1px solid #eee;
 
     &-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: .5rem;
     }
 
+    &__item {
+        font-size: 1rem;
+        color: #6c757d !important;
+        text-decoration: none;
+        font-weight: normal;
+        padding: .5rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
