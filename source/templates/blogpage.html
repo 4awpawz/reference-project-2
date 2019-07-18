@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title data-trio-callback="setBlogPageDocTitle">Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Roboto:100,  300, 400&display=swap" rel="stylesheet">
     <link data-trio-link rel="stylesheet" href="/css/main.css">
 </head>
 <body class="blog">
@@ -13,18 +13,26 @@
         <header data-trio-include="blogheader.html"></header>
         <div data-trio-include="blogcategorieslist.html"></div>
     </div>
-    <main>
-        <section class="banner">
-            <p class="banner__text">Banner</p>
-        </section>
-        <section class="container blog__container blog__articles">
+    <main class="container blog__container">
+        <div class="jumbotron">
+            <div class="jumbotron__content">
+                <h1 class="jumbotron__heading">Title of a longer featured blog post</h1>
+                <p class="jumbotron__lead">
+                    Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.
+                </p>
+            </div>
+        </div>
+        <div class="container blog__container">
+            <div class="blog__featured-articles"></div>
+        </div>
+        <!-- <section class="container blog__container blog__articles">
             <ul data-trio-callback="blogPage" class="blog__articles-list"></ul>
-        </section>
-        <section class="container blog__container categories">
+        </section> -->
+        <!-- <section class="container blog__container categories">
             <h2 class="categories__title">Categories</h2>
             <ul data-trio-callback="categoriesList" class="categories__list"></ul>
-        </section>
-        <section data-trio-callback="blogNavigator" class="container blog__container navigator"></section>
+        </section> -->
+        <section data-trio-callback="blogNavigator" class="navigator"></section>
     </main>
     <footer data-trio-include="footer.html"></footer>
 </body>

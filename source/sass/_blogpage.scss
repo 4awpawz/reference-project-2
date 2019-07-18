@@ -1,8 +1,9 @@
 .blog {
     font-family: $blog-sans-serif-font;
 
-    &__container {
-        max-width: $blog-container-width;
+    &__featured-articles {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__articles {
@@ -45,4 +46,8 @@
             font-size: 1.5rem;
         }
     }
+}
+
+@media (min-width: 576px) {
+
 }

@@ -1,0 +1,48 @@
+%box {
+    width: 100%;
+}
+
+.jumbotron {
+    @extend %box;
+    border-radius: .3rem;
+    background-color: #343a40;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    &__content {
+        @extend %box;
+    }
+
+    &__heading {
+        margin: 0;
+        font-family: $blog-serif-font;
+        color: #fff;
+        font-size: 2.5rem;
+        font-style: italic;
+        line-height: 1.2;
+    }
+
+    &__lead {
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: #fff;
+        margin: 1rem 0;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 3rem;
+
+        &__heading {
+            font-size: 3rem;
+            max-width: 50%;
+        }
+
+        &__lead {
+            max-width: 50%;
+        }
+    }
+}

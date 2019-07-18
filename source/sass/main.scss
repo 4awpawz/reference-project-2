@@ -1,4 +1,4 @@
-@import "variables";
+@import "./base/variables";
 @import "resets";
 @import "mixins";
 @import "container";
@@ -8,6 +8,7 @@
 @import "blogcategorieslist";
 @import "navigator";
 @import "banner";
+@import "box";
 @import "articleimage";
 @import "categorieslist";
 @import "blogpage";

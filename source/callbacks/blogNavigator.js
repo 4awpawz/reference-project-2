@@ -10,16 +10,6 @@ module.exports = ({ $tag, asset, site }) => {
     const newer = index - 1;
     const older = index + 1;
 
-    if (newer === 0) {
-        $tag.append(/* html */`
-            <span class="navigator__empty">Newer</span>
-        `);
-    } else {
-        $tag.append(/* html */`
-            <a class="navigator__newer" href="${newer === 1 ? "/blog" : `/blog/page${index - 1}`}">Newer</a>
-        `);
-    }
-
     if (older > totalPages) {
         $tag.append(/* html */`
                 <span class="navigator__empty">Older</span>
@@ -27,6 +17,16 @@ module.exports = ({ $tag, asset, site }) => {
     } else {
         $tag.append(/* html */`
             <a class="navigator__newer" href="/blog/page${index + 1}">Older</a>
+        `);
+    }
+
+    if (newer === 0) {
+        $tag.append(/* html */`
+            <span class="navigator__empty">Newer</span>
+        `);
+    } else {
+        $tag.append(/* html */`
+            <a class="navigator__newer" href="${newer === 1 ? "/blog" : `/blog/page${index - 1}`}">Newer</a>
         `);
     }
 };
